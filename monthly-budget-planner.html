@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Budget Planner | Asdale Dynamics, LLC</title>
+<meta name="description" content="Fillable, printable, large-print friendly monthly budget planner. Plan income vs. expenses by category. No account needed.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="sheet">
+  <header class="no-print">
+    <a class="btn secondary" href="index.html">&larr; Back to kit</a>
+    <button class="btn" onclick="window.print()">Print this sheet</button>
+  </header>
+
+  <h1>Monthly Budget Planner</h1>
+  <p class="small">Plan your income and expenses for one month. Large-print friendly, fillable on screen or by hand. Print with Ctrl+P / Cmd+P.</p>
+
+  <form class="no-print" onsubmit="event.preventDefault(); alert('This sheet is for printing only &mdash; nothing is saved or sent anywhere.');">
+    <div class="grid-2">
+      <div>
+        <label for="month">Month</label>
+        <input class="field" id="month" type="text" placeholder="e.g. October 2026">
+      </div>
+      <div>
+        <label for="budget-period">Budget period</label>
+        <input class="field" id="budget-period" type="text" placeholder="e.g. 1st &ndash; 31st">
+      </div>
+    </div>
+    <p class="small kicker">Your household:</p>
+    <div class="grid-2">
+      <div>
+        <label for="prepared-by">Prepared by</label>
+        <input class="field" id="prepared-by" type="text" placeholder="Your name">
+      </div>
+      <div>
+        <label for="date-prepared">Date prepared</label>
+        <input class="field" id="date-prepared" type="date">
+      </div>
+    </div>
+  </form>
+
+  <section>
+    <h2>1. Income</h2>
+    <table>
+      <thead>
+        <tr><th>Source</th><th class="center">Planned</th><th class="center">Actual</th><th class="center">Difference</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><input class="field" placeholder="e.g. Paycheck 1"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="e.g. Paycheck 2"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Side income / other"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr class="total-row"><td>Total income</td><td class="amount center">$0.00</td><td class="amount center">$0.00</td><td class="amount center">$0.00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>2. Fixed expenses (rent, utilities, insurance, subscriptions)</h2>
+    <table>
+      <thead>
+        <tr><th>Expense</th><th class="center">Planned</th><th class="center">Actual</th><th class="center">Difference</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><input class="field" placeholder="Rent / mortgage"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Utilities"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Phone / internet"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Insurance"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Subscriptions"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Other fixed"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr class="total-row"><td>Total fixed</td><td class="amount center">$0.00</td><td class="amount center">$0.00</td><td class="amount center">$0.00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Variable expenses (groceries, gas, dining, fun)</h2>
+    <table>
+      <thead>
+        <tr><th>Expense</th><th class="center">Planned</th><th class="center">Actual</th><th class="center">Difference</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><input class="field" placeholder="Groceries"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Gas / transport"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Dining out"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Entertainment"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Clothing / personal"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr><td><input class="field" placeholder="Other variable"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="amount center">$0.00</td></tr>
+        <tr class="total-row"><td>Total variable</td><td class="amount center">$0.00</td><td class="amount center">$0.00</td><td class="amount center">$0.00</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>4. Monthly summary</h2>
+    <div class="grid-2">
+      <div>
+        <p><strong>Total planned income:</strong> <span class="amount">$0.00</span></p>
+        <p><strong>Total planned expenses:</strong> <span class="amount">$0.00</span></p>
+        <p><strong>Planned surplus / (deficit):</strong> <span class="amount">$0.00</span></p>
+      </div>
+      <div>
+        <p><strong>Total actual income:</strong> <span class="amount">$0.00</span></p>
+        <p><strong>Total actual expenses:</strong> <span class="amount">$0.00</span></p>
+        <p><strong>Actual surplus / (deficit):</strong> <span class="amount">$0.00</span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="no-print">
+    <p>&copy; 2026 Asdale Dynamics, LLC. Free to use, print, and share. MIT licensed &mdash; see LICENSE.</p>
+    <p class="small">Asdale Dynamics, LLC &mdash; beginner-friendly AI education, books, and practical tools. <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a></p>
+  </footer>
+</main>
+</body>
+</html>

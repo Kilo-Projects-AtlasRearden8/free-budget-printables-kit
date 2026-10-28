@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bill Calendar | Asdale Dynamics, LLC</title>
+<meta name="description" content="Fillable, printable, large-print friendly bill calendar. Mark bill due dates on a monthly calendar and track what has been paid. No account needed.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="sheet">
+  <header class="no-print">
+    <a class="btn secondary" href="index.html">&larr; Back to kit</a>
+    <button class="btn" onclick="window.print()">Print this sheet</button>
+  </header>
+
+  <h1>Bill Calendar</h1>
+  <p class="small">Mark each bill&rsquo;s due date on the calendar and check it off when paid. Large-print friendly, fillable on screen or by hand. Print with Ctrl+P / Cmd+P.</p>
+
+  <form class="no-print" onsubmit="event.preventDefault(); alert('This sheet is for printing only &mdash; nothing is saved or sent anywhere.');">
+    <div class="grid-2">
+      <div>
+        <label for="calendar-month">Month / year</label>
+        <input class="field" id="calendar-month" type="text" placeholder="e.g. October 2026">
+      </div>
+      <div>
+        <label for="calendar-prepared-by">Prepared by</label>
+        <input class="field" id="calendar-prepared-by" type="text" placeholder="Your name">
+      </div>
+    </div>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="center">Sun</th><th class="center">Mon</th><th class="center">Tue</th><th class="center">Wed</th><th class="center">Thu</th><th class="center">Fri</th><th class="center">Sat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Week 1 -->
+      <tr>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+      </tr>
+      <!-- Week 2 -->
+      <tr>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+      </tr>
+      <!-- Week 3 -->
+      <tr>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+      </tr>
+      <!-- Week 4 -->
+      <tr>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+      </tr>
+      <!-- Week 5 -->
+      <tr>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day"><input class="field cal-num" type="number" min="1" max="31"><div class="cal-bills"></div><input type="checkbox" class="cal-paid"></td>
+        <td class="cal-day empty"></td>
+        <td class="cal-day empty"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h2>Bills due this month</h2>
+    <table>
+      <thead>
+        <tr><th>Bill</th><th class="center">Due date</th><th class="amount">Amount</th><th class="center">Paid</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+        <tr><td><input class="field"></td><td><input class="field small" type="date"></td><td class="amount"><input class="field small" type="number" step="0.01" min="0"></td><td class="center"><input type="checkbox"></td><td><input class="field"></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="no-print">
+    <p>&copy; 2026 Asdale Dynamics, LLC. Free to use, print, and share. MIT licensed &mdash; see LICENSE.</p>
+    <p class="small">Asdale Dynamics, LLC &mdash; beginner-friendly AI education, books, and practical tools. <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a></p>
+  </footer>
+</main>
+</body>
+</html>
